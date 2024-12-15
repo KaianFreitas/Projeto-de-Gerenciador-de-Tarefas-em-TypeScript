@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/styles/style.css">
+  <title>Projeto TS</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Projeto TypeScript</h1>
+    </header>
+
+    <div class="card fade-in">
+      <div id="app">
+        <button id="toggleMode" class="button">Troque o modo</button>
+        <hr />
+        <form id="taskForm">
+          <fieldset id="todoSet">
+            <legend> Lista de tarefas: </legend>
+            <label for="todoDescription">Descrição:</label>
+            <input type="text" name="todoDescription" required />
+            <button type="submit">Enviar</button>
+          </fieldset>
+          <fieldset id="reminderSet" style="display: none" disabled>
+            <legend>Lembrete:</legend>
+            <label for="reminderDescription">Descrição:</label>
+            <input type="text" name="reminderDescription" required />
+            <label for="scheduleDate">Data:</label>
+            <input type="date" name="scheduleDate" required />
+            <label for="notification">Notificar por:</label>
+            <select name="notification">
+              <option value="SMS">SMS</option>
+              <option value="EMAIL">EMAIL</option>
+              <option value="PUSH_NOTIFICATION">Push notification</option>
+            </select>
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+        <br />
+        <ul id="tasksList" style="white-space: pre-line; list-style: none"></ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Desenvolvido com TypeScript</p>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
