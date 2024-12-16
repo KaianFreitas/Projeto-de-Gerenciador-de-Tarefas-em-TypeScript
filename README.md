@@ -48,9 +48,6 @@ npm run build
 
 - TypeScript: ^5.7.2
 
-## Licença
-
-ISC
 
 ## Contato
 
